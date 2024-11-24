@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product CRUD</title>
+  <style>
+    /* --------- Estilo Geral --------- */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2c2c2c; /* Fundo cinza escuro */
+      color: #ffffff; /* Texto branco */
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      color: #4a90e2; /* Azul principal */
+      font-size: 2em;
+    }
+
+    /* --------- Formulários --------- */
+    form {
+      background-color: #3c3c3c; /* Fundo cinza intermediário */
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    form h2 {
+      margin-bottom: 15px;
+      color: #4a90e2; /* Azul principal */
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #ffffff; /* Texto branco */
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #555;
+      border-radius: 5px;
+      background-color: #4a4a4a; /* Fundo dos campos */
+      color: #ffffff;
+      box-sizing: border-box;
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    textarea:focus {
+      border-color: #4a90e2; /* Azul principal */
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4a90e2;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #357ab7; /* Azul mais escuro */
+    }
+
+    /* --------- Lista de Produtos --------- */
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    ul li {
+      background: #3c3c3c; /* Fundo cinza intermediário */
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffffff; /* Texto branco */
+    }
+
+    ul li strong {
+      color: #4a90e2; /* Azul principal */
+    }
+
+    /* Botões dentro da lista de produtos */
+    .product-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .product-buttons button {
+      padding: 5px 10px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .delete-button {
+      background-color: #e94e77; /* Vermelho */
+      color: #ffffff;
+    }
+
+    .delete-button:hover {
+      background-color: #c43c62; /* Vermelho mais escuro */
+    }
+
+    .update-button {
+      background-color: #4caf50; /* Verde */
+      color: #ffffff;
+    }
+
+    .update-button:hover {
+      background-color: #388e3c; /* Verde mais escuro */
+    }
+  </style>
+</head>
+<body>
+  <h1>Product CRUD</h1>
+
+  <!-- Add Product Form -->
+  <form id="add-product-form">
+    <h2>Add Product</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" required step="0.01">
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" rows="3" required></textarea>
+    <button type="submit">Add Product</button>
+  </form>
+
+  <!-- Product List -->
+  <ul id="products"></ul>
+
+  <!-- JavaScript -->
+  <script src="app23.js"></script>
+  <script src="app2.js">
+    
+    // Load products when the page is ready
+    window.addEventListener('load', fetchProducts);
+  </script>
+</body>
+</html>
+
+
+
+

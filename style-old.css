@@ -1,0 +1,38 @@
+/* Centralização de cabeçalho */
+h1 {
+  text-align: center;
+}
+
+/* Estilização geral para seções principais */
+#product-list,
+#add-product,
+#update-product {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Estilização de formulários */
+form {
+  margin-top: 20px;
+}
+
+form label {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+}
+
+form input[type="text"],
+form input[type="number"] {
+  display: inline-block;
+  width: 200px;
+}
+
+/* Ajuste adicional para alinhamento e espaçamento */
+form input,
+form button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+  

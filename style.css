@@ -1,0 +1,140 @@
+/* --------- Estilo Geral --------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --------- Cabeçalho --------- */
+h1 {
+  margin: 20px 0;
+  text-align: center;
+  color: #007BFF; /* Azul principal */
+  font-size: 2em;
+}
+
+/* --------- Lista de Produtos --------- */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* --------- Botões --------- */
+button {
+  margin-left: 10px;
+  background-color: #007BFF; /* Azul principal */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Azul mais escuro */
+  transform: scale(1.05);
+}
+
+/* --------- Formulários --------- */
+form {
+  margin: 20px auto;
+  max-width: 400px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: calc(100% - 20px);
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #007BFF; /* Azul principal */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Botões de envio */
+input[type="submit"],
+button[type="submit"] {
+  background-color: #007BFF; /* Azul principal */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+  background-color: #0056b3; /* Azul mais escuro */
+  transform: scale(1.05);
+}
+
+/* --------- Ajustes para Campos Numéricos --------- */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* --------- Responsividade --------- */
+@media (max-width: 600px) {
+  li {
+    display: block;
+    margin: 10px auto;
+  }
+
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+
+  

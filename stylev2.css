@@ -1,0 +1,88 @@
+/* --------- Estilo Geral --------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #3c3c3c;
+  color: #ffffff;
+}
+
+/* --------- Cabeçalho --------- */
+h1 {
+  margin: 20px 0;
+  text-align: center;
+  color: #007BFF;
+  font-size: 1.8em;
+}
+
+/* --------- Lista de Produtos --------- */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  margin: 5px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* --------- Botões --------- */
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* --------- Formulários --------- */
+form {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 300px;
+  padding: 20px;
+  background-color: #3c3c3c;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* --------- Responsividade --------- */
+@media (max-width: 600px) {
+  li {
+    display: block;
+    margin: 10px auto;
+  }
+
+  form {
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+
